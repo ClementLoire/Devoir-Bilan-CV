@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 1160px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    background-color: #17abb3;
+    color: white;
+    padding: 20px;
+}
+
+.photo-container {
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: zoom-in;
+    object-fit: cover;
+}
+
+.header-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 300px;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-line {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item a, .contact-item span {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenu principal */
+.main-content {
+    display: flex;
+}
+
+/* Colonne de gauche */
+.sidebar {
+    width: 30%;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Colonne principale */
+.main-column {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: #17abb3;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #17abb3;
+    padding-bottom: 5px;
+}
+
+/* Compétences */
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    margin-right: 150px;
+}
+
+/* Langues */
+.langue {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Qualités et centres d'intérêt */
+.qualites ul, .interets ul {
+    list-style-type: none;
+}
+
+.qualites li, .interets li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.qualites li::before, .interets li::before {
+    content: "■";
+    color: #17abb3;
+    position: absolute;
+    left: 0;
+}
+
+/* Profil */
+.text-justify {
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 15px;
+}
+
+/* Formations, stages et expériences */
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.timeline-item:hover {
+    background-color: #f5f5f5;
+}
+
+.timeline-item:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #17abb3;
+}
+
+.timeline-content {
+    flex-grow: 1;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.institution {
+    font-style: italic;
+    color: #666;
+}
+
+.timeline-date {
+    color: #17abb3;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: right;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #17abb3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+    background-color: #17abb3;
+}
+
+.social-link:hover .social-icon {
+    opacity: 0.8;
+}
+
+.update-date {
+    font-size: 0.9rem;
+}
